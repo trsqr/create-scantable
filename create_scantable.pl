@@ -47,7 +47,9 @@ while (my $row = <$fh>) {
 
 		if (length($n[3]) == 2) {
 			$fec = substr($n[3], 0, 1) . "/" . substr($n[3], 1);
-		} else {
+		} elsif (uc($n[3]) eq 'AUTO') {
+			$fec = "AUTO";
+		} else {	
 			print STDERR "Invalid FEC on line: $row\n";
 			$error = 1;
 		}
