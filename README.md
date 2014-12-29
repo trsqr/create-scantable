@@ -1,4 +1,4 @@
 create-scantable
 ================
 
-Small perl script to read in a kingofsat.net ini file and create DVBV5 initial scan file from that.
+Small perl script to convert a kingofsat.net ini file into a DVBV5 initial scan file.
